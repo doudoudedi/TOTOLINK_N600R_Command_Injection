@@ -1,6 +1,6 @@
 # TOTOlink N600R Comand Injection
 
-#### Venda
+### Venda
 
 ToTolink N600R http://totolink.net/home/menu/detail/menu_listtpl/download/id/160/ids/36.html
 
@@ -14,19 +14,13 @@ Firmware_link: http://totolink.net/home/menu/detail/menu_listtpl/download/id/185
 
 Firmware: TOTOLINK_C8540R-1C_A7100RU_IP04365_MT7621AMT7615Ex2_SPI_16M128M_V7.4cu.2313_B20191024_ALL.web
 
-#### Describe
+### Describe
 
 ​	N600R设备存在命令执行漏洞，攻击者可以利用此漏洞获取服务器权限
 
 ​	A command execution vulnerability exists in the n600r device, which allows an attacker to gain server privileges
 
 ### Vulnerability1
-
-#### Describe
-
-​	N600R设备存在命令执行漏洞，攻击者可以利用此漏洞获取服务器权限
-
-​	A command execution vulnerability exists in the n600r device, which allows an attacker to gain server privileges
 
 #### Detail
 
@@ -92,8 +86,6 @@ requests.post(url,headers=headers)
 
 #### Detail
 
-​	漏洞存在于cstecgi.cgi文件，在测试ping的函数中可以传入json数据造成未认证的任意命令执行
-
 ​	It exists in the cstecgi.cgi file. In the function of testing Ping, JSON data can be passed in, resulting in unconditional arbitrary command execution
 
 <img src="./img/image-20211111122344967.png" alt="image-20211111122344967" style="zoom:50%;" />
@@ -123,7 +115,7 @@ Content-Length: 95
 
 #### Detail
 
-​	漏洞存在于cstecgi.cgi文件，在更改语言处存在命令注入漏洞，可导致未认证的命令执行
+​	The vulnerability lies in cstecgi.cgi file, there is a command injection vulnerability at the place where the language is changed, which can lead to the execution of unauthenticated commands
 
 ​	A command injection vulnerability exists in the cstecgi.cgi file where the language is changed
 
@@ -154,7 +146,7 @@ Referer: http://192.168.0.1/title.asp
 
 #### Detail
 
-​	漏洞存在于cstecgi.cgi文件，在获取系统时间处存在命令注入，导致未认证的命令执行
+​	The vulnerability lies in cstecgi.cgi file, there is command injection at the time of obtaining the system time, resulting in the execution of unauthenticated commands
 
 <img src="./img/image-20211111141412938.png" alt="image-20211111141412938" style="zoom:50%;" />
 
